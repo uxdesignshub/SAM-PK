@@ -1,0 +1,171 @@
+<div class="dynamicpagediv insideframepadding" id="unit1-lesson2">
+  <div id="header"></div>
+
+  <div class="lesson tocinnercontainer scrollbarorange">
+    <!-- "heavy-light" exercise 1 start -->
+    <div class="exercise">
+      <div class="activity-title" onclick="play('data/assets/audio/tick.mp3')">
+        <i class="activity-icon"
+          ><img
+            src="data/assets/images/Unit-images/unit-1/lesson-1/hnad5.png"
+            alt="big"
+        /></i>
+
+        <h2>
+          <span>P</span>
+          <span>o</span>
+          <span>i</span>
+          <span>n</span>
+          <span>t</span>
+        </h2>
+      </div>
+      <div class="upper-area cursor">
+        <div id="weight-scales"> 
+          <img
+            src="data/assets/images/Unit-images/unit-1/lesson-2/weight-scales.jpg"
+            alt="weight-scales"
+          />
+        </div>
+        <div id="heavy-books">
+          <img
+            src="data/assets/images/Unit-images/unit-1/lesson-2/Heavy-books.png"
+            alt="Heavy-books"
+          />
+        </div>
+        <div id="light-book">
+          <img
+            src="data/assets/images/Unit-images/unit-1/lesson-2/light-book.png"
+            alt="light-book"
+          />
+        </div>
+      </div>
+      <div class="bottom-area horizontal-divider">
+        <div id="heavy-car" class="cursor">
+          <img
+            src="data/assets/images/Unit-images/unit-1/lesson-2/Heavy-car.jpg"
+            alt="Heavy-car"
+          />
+        </div>
+        <div id="light-trycycle" class="cursor">
+          <img
+            src="data/assets/images/Unit-images/unit-1/lesson-2/light-trycycle.png"
+            alt="light-trycycle"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- "heavy-light" exercise 1 end -->
+
+    
+      <!-- "heavy-light" exercise 2 start -->
+      <div class="exercise" id="Quiz-HeavyLight">
+        <div class="activity-title" onclick="play('data/assets/audio/color.mp3')">
+           <i class="activity-icon"><img src="data/assets/images/Unit-images/unit-1/lesson-2/hnad9.png"
+              alt="big"></i>
+           <h2>
+              <span>C</span>
+              <span>i</span>
+              <span>r</span>
+              <span>c</span>
+              <span>l</span>
+              <span>e</span>
+           </h2>
+        </div>
+        <div class="big-small-sec two-rows clearfix">
+           <form id="quiz" name="quiz">
+              <div id="results"></div>
+              <div class="upper-area2">
+                <div id="baloon" class="right-speaker"> 
+                    <img
+                      src="data/assets/images/Unit-images/unit-1/lesson-2/shutterstock_371687692.jpg"
+                      alt="shutterstock_371687692"
+                    />
+                    <h3>light</h3>
+                    <span class="playbtn" onclick="play('data/assets/audio/audio-unit-wise/Unit1/light.mp3')">
+                      <img src="data/assets/images/volumn.png" alt="Play">
+                      </span>
+                  </div>
+                <div id="house" class="wrong-answer hoverzoom cursor"> 
+                    <img
+                      src="data/assets/images/Unit-images/unit-1/lesson-2/shutterstock_157613708.jpg"
+                      alt="shutterstock_371687692"
+                    /><span class="On-submit cross"  style="display: none;"></span>
+                  </div>
+                <div id="houseWithHand" class="correct-answer hoverzoom cursor"> 
+                    <img
+                      src="data/assets/images/Unit-images/unit-1/lesson-2/shutterstock_668999506_copy.png"
+                      alt="shutterstock_668999506_copy"
+                    /><span class="On-submit tick" style="display: none;"></span>
+                  </div>
+              </div>
+              <div class="bottom-area2 horizontal-divider">
+                <div id="stone" class="right-speaker"> 
+                    <img
+                      src="data/assets/images/Unit-images/unit-1/lesson-2/shutterstock_404960242.png"
+                      alt="Stone"
+                    />
+                    <h3>heavy</h3>
+                    <span class="playbtn" onclick="play('data/assets/audio/audio-unit-wise/Unit1/heavy.mp3')">
+                      <img src="data/assets/images/volumn.png" alt="Play">
+                      </span>
+                  </div>
+                <div id="comb" class="wrong-answer hoverzoom cursor"> 
+                    <img
+                      src="data/assets/images/Unit-images/unit-1/lesson-2/comb.jpg"
+                      alt="comb"
+                    />
+                    <span class="On-submit cross" style="display: none;"></span>
+                  </div>
+                <div id="machine" class="correct-answer hoverzoom cursor"> 
+                    <img
+                      src="data/assets/images/Unit-images/unit-1/lesson-2/shutterstock_654951829_copy.jpg"
+                      alt="shutterstock_654951829_copy"
+                    /><span class="On-submit tick" style="display: none;"></span>
+                  </div>
+              </div>
+              <div class="actionbtn reloadbtn">
+                 <button id="button" type="button" value="Submit" onclick="check();" class="disablehreflink"
+                    style="display: none;">
+                 <img src="data/assets/images/ansbtn.png" alt="Answer"
+                    style="opacity: 1; transform: scale(1);">
+                 </button>
+                 <button type="reset" class="resetRadioInput" onclick="myFunction()">
+                 <img src="data/assets/images/reload.png" alt="Reload">
+                 </button>
+              </div>
+
+
+                       <div class="transparentbg" id="after_submit" style="display: none;">
+                           <div class="result">
+                               <div class="goodjob" style="display: none;">
+                                   <a href="javascript:void(0);" class="popupclose disablehreflink"><img src="data/assets/images/wrong.png" alt="Close"></a>
+                                   <img src="data/assets/images/goodjob.jpg" class="img100">
+                               </div>
+                               <div class="tryagain">
+                                   <a href="javascript:void(0);" class="popupclose disablehreflink"><img src="data/assets/images/wrong.png" alt="Close"></a>
+                                   <img src="data/assets/images/tryagain.jpg" class="img100">
+                               </div>
+                           </div>
+                       </div>
+
+
+
+
+           </form>
+        </div>
+        <div class="homework">
+           <p class="homeworkimg" onclick="homeworkdetail();"><img title="Homework"
+              src="data/assets/images/homework.png" alt="Homework"></p>
+           <div class="homeworktext" style="display: none;">
+              <span>✖</span>
+              Ask your child to show you "big" and "Small" things around the house
+           </div>
+        </div>
+     </div>
+     <!-- "heavy-light" exercise 2 end -->
+  </div>
+  <!-- lesson end -->
+
+  <div id="footerwithlesson"></div>
+</div>
+<!-- dynamicpagediv end -->

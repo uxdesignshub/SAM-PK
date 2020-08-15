@@ -1,0 +1,144 @@
+<script src="data/assets/js/new-custom.js"></script>
+<div class="dynamicpagediv insideframepadding">
+   <div id="header"></div>
+   <div class="lesson tocinnercontainer scrollbarorange">
+      <!-- "big-small" exercise 1 start -->
+      <div class="exercise">
+         <div class="activity-title" onclick="play('data/assets/audio/tick.mp3')">
+            <i class="activity-icon"><img src="data/assets/images/Unit-images/unit-1/lesson-1/hnad5.png"
+               alt="big"></i>
+            <h2>
+               <span>P</span>
+               <span>o</span>
+               <span>i</span>
+               <span>n</span>
+               <span>t</span>
+            </h2>
+         </div>
+         <div class="big-small two-col clearfix">
+            <div class="left-col">
+               <div class="first-img"><img src="data/assets/images/Unit-images/unit-1/lesson-1/big-car.png"
+                  alt="big" class="zoom-effect"
+                  onclick="play('data/assets/audio/audio-unit-wise/Unit1/big.mp3')"></div>
+               <div class="sec-img"><img src="data/assets/images/Unit-images/unit-1/lesson-1/small-car.png"
+                  alt="small" class="zoom-effect"
+                  onclick="play('data/assets/audio/audio-unit-wise/Unit1/small.mp3')"></div>
+            </div>
+            <div class="right-col">
+               <div class="first-img"><img src="data/assets/images/Unit-images/unit-1/lesson-1/small-toy.png"
+                  alt="big" class="zoom-effect"
+                  onclick="play('data/assets/audio/audio-unit-wise/Unit1/small.mp3')"></div>
+               <div class="sec-img"><img src="data/assets/images/Unit-images/unit-1/lesson-1/big-toy.png"
+                  alt="small" class="zoom-effect"
+                  onclick="play('data/assets/audio/audio-unit-wise/Unit1/big.mp3')"></div>
+            </div>
+         </div>
+      </div>
+      <!-- "big-small" exercise 1 end -->
+      <!-- "big-small" exercise 2 start -->
+      <div class="exercise" id="Quiz-BigSmall">
+         <div class="activity-title" onclick="play('data/assets/audio/color.mp3')">
+            <i class="activity-icon"><img src="data/assets/images/Unit-images/unit-1/lesson-1/hnad9.png"
+               alt="big"></i>
+            <h2>
+               <span>C</span>
+               <span>o</span>
+               <span>l</span>
+               <span>o</span>
+               <span>r</span>
+            </h2>
+         </div>
+         <div class="big-small-sec two-rows clearfix">
+            <form id="quiz" name="quiz">
+               <div id="results"></div>
+               <div class="first-row">
+                  <div class="sub-title">
+                     <h3 class=" questions">big<span class="playbtn"
+                        onclick="play('data/assets/audio/audio-unit-wise/Unit1/big.mp3')">
+                        <img src="data/assets/images/volumn.png" alt="Play">
+                        </span>
+                     </h3>
+                  </div>
+                  <div class="first-img first-roww correct-answer">
+                     <span class="On-submit tick"></span><label>
+                     <img src="data/assets/images/Unit-images/unit-1/lesson-1/big-chair.png" alt="big"
+                        class="zooms zoom-effect">
+                     <input type="radio" id="mc" name="question1" value="bigimg1">
+                     </label></span>
+                  </div>
+                  <div class="sec-img first-roww wrong-answer">
+                     <span class="On-submit cross"></span><label><img
+                        src="data/assets/images/Unit-images/unit-1/lesson-1/small-chair.png" alt="small"
+                        class="zooms zoom-effect">
+                     <input type="radio" id="mc" name="question1" value="smallimg1">
+                     </label>
+                  </div>
+               </div>
+               <div class="sec-row horizontal-divider">
+                  <div class="sub-title">
+                     <h3 class="questions">small<span class="playbtn"
+                        onclick="play('data/assets/audio/audio-unit-wise/Unit1/small.mp3')">
+                        <img src="data/assets/images/volumn.png" alt="Play">
+                        </span>
+                     </h3>
+                  </div>
+                  <div class="first-img second-roww wrong-answer">
+                     <span class="On-submit cross"></span><label><img
+                        src="data/assets/images/Unit-images/unit-1/lesson-1/big-bag.png" alt="big"
+                        class="zooms zoom-effect">
+                     <input type="radio" id="mc" name="question2" value="bigimg2">
+                     </label>
+                  </div>
+                  <div class="sec-img second-roww correct-answer">
+                     <span class="On-submit tick"></span><label><img
+                        src="data/assets/images/Unit-images/unit-1/lesson-1/small-bag.png" alt="small"
+                        class="zooms zoom-effect">
+                     <input type="radio" id="mc" name="question2" value="smallimg2">
+                     </label>
+                  </div>
+               </div>
+               <div class="actionbtn reloadbtn">
+                  <button id="button" type="button" value="Submit" onclick="check();" class="disablehreflink"
+                     style="display: none;">
+                  <img src="data/assets/images/ansbtn.png" alt="Answer"
+                     style="opacity: 1; transform: scale(1);">
+                  </button>
+                  <button type="reset" class="resetRadioInput" onclick="myFunction()">
+                  <img src="data/assets/images/reload.png" alt="Reload">
+                  </button>
+               </div>
+
+
+                        <div class="transparentbg" id="after_submit" style="display: none;">
+                            <div class="result">
+                                <div class="goodjob" style="display: none;">
+                                    <a href="javascript:void(0);" class="popupclose disablehreflink"><img src="data/assets/images/wrong.png" alt="Close"></a>
+                                    <img src="data/assets/images/goodjob.jpg" class="img100">
+                                </div>
+                                <div class="tryagain">
+                                    <a href="javascript:void(0);" class="popupclose disablehreflink"><img src="data/assets/images/wrong.png" alt="Close"></a>
+                                    <img src="data/assets/images/tryagain.jpg" class="img100">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+            </form>
+         </div>
+         <div class="homework">
+            <p class="homeworkimg" onclick="homeworkdetail();"><img title="Homework"
+               src="data/assets/images/homework.png" alt="Homework"></p>
+            <div class="homeworktext" style="display: none;">
+               <span>✖</span>
+               Ask your child to show you "big" and "Small" things around the house
+            </div>
+         </div>
+      </div>
+      <!-- "big-small" exercise 2 end -->
+   </div>
+   <!-- lesson end -->
+   <div id="footerwithlesson"></div>
+</div>
+<!-- dynamicpagediv end -->
