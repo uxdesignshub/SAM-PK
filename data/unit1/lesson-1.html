@@ -1,10 +1,10 @@
 <script src="data/assets/js/new-custom.js"></script>
 <div class="dynamicpagediv insideframepadding">
    <div id="header"></div>
-   <div class="lesson tocinnercontainer scrollbarorange">
+   <div class="lesson tocinnercontainer scrollbarorange U1l1" id="quiz-SelectOne">
       <!-- "big-small" exercise 1 start -->
       <div class="exercise">
-         <div class="activity-title" onclick="play('data/assets/audio/tick.mp3')">
+         <!-- <div class="activity-title" onclick="play('data/assets/audio/point.mp3')">
             <i class="activity-icon"><img src="data/assets/images/Unit-images/unit-1/lesson-1/hnad5.png"
                alt="big"></i>
             <h2>
@@ -14,8 +14,14 @@
                <span>n</span>
                <span>t</span>
             </h2>
-         </div>
-         <div class="big-small two-col clearfix">
+         </div> -->
+         <div class="topleftlogo clearfix" id="topleftlogo" onclick="play('data/assets/audio/read.mp3')">
+                            <div class="pointer inline">
+                                <img src="data/assets/images/readlogo.png" alt="Book" class="logoinside">
+                            </div>
+                            <img src="data/assets/images/readtext.png" alt="Read" class="textinside">
+          </div>
+         <div class="big-small two-col clearfix" id="quiz-soft">
             <div class="left-col">
                <div class="first-img"><img src="data/assets/images/Unit-images/unit-1/lesson-1/big-car.png"
                   alt="big" class="zoom-effect"
@@ -36,18 +42,13 @@
       </div>
       <!-- "big-small" exercise 1 end -->
       <!-- "big-small" exercise 2 start -->
-      <div class="exercise" id="Quiz-BigSmall">
-         <div class="activity-title" onclick="play('data/assets/audio/color.mp3')">
-            <i class="activity-icon"><img src="data/assets/images/Unit-images/unit-1/lesson-1/hnad9.png"
-               alt="big"></i>
-            <h2>
-               <span>C</span>
-               <span>o</span>
-               <span>l</span>
-               <span>o</span>
-               <span>r</span>
-            </h2>
-         </div>
+      <div class="exercise" id="Quiz-soft">
+         <div class="topleftlogo clearfix" id="topleftlogo" onclick="play('data/assets/audio/read.mp3')">
+                            <div class="pointer inline">
+                                <img src="data/assets/images/readlogo.png" alt="Book" class="logoinside">
+                            </div>
+                            <img src="data/assets/images/readtext.png" alt="Read" class="textinside">
+          </div>
          <div class="big-small-sec two-rows clearfix">
             <form id="quiz" name="quiz">
                <div id="results"></div>
@@ -110,6 +111,11 @@
 
 
                         <div class="transparentbg" id="after_submit" style="display: none;">
+                           <audio id="myAudio">
+  
+                              <source  type="audio/mpeg">
+                              
+                            </audio>
                             <div class="result">
                                 <div class="goodjob" style="display: none;">
                                     <a href="javascript:void(0);" class="popupclose disablehreflink"><img src="data/assets/images/wrong.png" alt="Close"></a>
@@ -132,7 +138,7 @@
                src="data/assets/images/homework.png" alt="Homework"></p>
             <div class="homeworktext" style="display: none;">
                <span>✖</span>
-               Ask your child to show you "big" and "Small" things around the house
+               Ask your child to show you "big" and "Small" things around the house.
             </div>
          </div>
       </div>

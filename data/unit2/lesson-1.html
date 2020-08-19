@@ -1,15 +1,151 @@
+<script src="data/assets/js/new-custom.js"></script>    
         <div class="dynamicpagediv insideframepadding">
             <div id="header"></div>
             
-            <div class="lesson">
-                <!-- "Read" exercise start -->
-               <!-- exercise end -->
-                <!-- "Read" exercise end -->
+            <div class="lesson tocinnercontainer scrollbarorange sky-wrapper daynight-wrap" id="quiz-SelectTwo">
+                 <!-- "big-small" exercise 1 start -->
+      <div class="exercise">
+       <div class="topleftlogo clearfix" id="topleftlogo" onclick="play('data/assets/audio/read.mp3')">
+                            <div class="pointer inline">
+                                <img src="data/assets/images/readlogo.png" alt="Book" class="logoinside">
+                            </div>
+                            <img src="data/assets/images/readtext.png" alt="Read" class="textinside">
+          </div>
+        <div class="big-small two-col clearfix">
+            <div class="sky-top">
+           <div class="left-col">
+              <div class="first-img"><img src="data/assets/images/unit/unit2/day-boy.png"
+                 alt="sky" class="zoom-effect" onclick="play('data/assets/audio/audio-unit-wise/Unit1/big.mp3')"
+                 ></div>
+              <div class="sec-img"><img src="data/assets/images/unit/unit2/day-sky.png"
+                 alt="sky" class="zoom-effect" onclick="play('data/assets/audio/audio-unit-wise/Unit1/big.mp3')"
+                 ></div>
+           </div>
+        </div>
+        <div class="sky-bottom">
+           <div class="right-col">               
+                  <div class="sec-img"><img src="data/assets/images/unit/unit2/night-sky.png"
+                     alt="sky" class="zoom-effect" onclick="play('data/assets/audio/audio-unit-wise/Unit1/big.mp3')"
+                     ></div> 
+                  <div class="first-img"><img src="data/assets/images/unit/unit2/night-boy.png"
+                     alt="sky" class="zoom-effect" onclick="play('data/assets/audio/audio-unit-wise/Unit1/big.mp3')"
+                     ></div>
+           </div>
+        </div>
+        </div>
+     </div>
+     <!-- "big-small" exercise 1 end -->
+     <!-- "big-small" exercise 2 start -->
+     <div class="exercise">
+        <div class="topleftlogo clearfix" id="topleftlogo" onclick="play('data/assets/audio/read.mp3')">
+                            <div class="pointer inline">
+                                <img src="data/assets/images/readlogo.png" alt="Book" class="logoinside">
+                            </div>
+                            <img src="data/assets/images/readtext.png" alt="Read" class="textinside">
+          </div>
+        <div class="big-small-sec two-rows clearfix">
+         <form id="quiz" name="quiz">
+            <div id="results"></div>
+            <div class="first-row">
+               <div class="sub-title">
+                  <h3 class="questions">day<span class="playbtn"
+                     onclick="play('data/assets/audio/audio-unit-wise/Unit1/small.mp3')">
+                     <img src="data/assets/images/volumn.png" alt="Play">
+                     </span>
+                  </h3>
+               </div>
+               <div class="first-img first-roww correct-answer">
+                  <span class="On-submit tick"></span><label>
+                  <img src="data/assets/images/unit/unit2/cloud.jpg" alt="sky"
+                     class="zooms zoom-effect">
+                  <!-- <input type="radio" id="mc" name="question1" value="bigimg1"> -->
+                  </label>
+               </div>
+               <div class="sec-img first-roww correct-answer">
+                  <span class="On-submit tick"></span><label><img src="data/assets/images/unit/unit2/sun.png" alt="sky"
+                     class="zooms zoom-effect">
+                  <!-- <input type="radio" id="mc" name="question1" value="smallimg1"> -->
+                  </label>
+               </div>
+               <div class="third-img first-roww wrong-answer">
+                  <span class="On-submit cross"></span><label><img src="data/assets/images/unit/unit2/star.jpg" alt="sky"
+                     class="zooms zoom-effect">
+                  <!-- <input type="radio" id="mc" name="question1" value="smallimg1"> -->
+                  </label>
+               </div>
+            </div>
+            <div class="sec-row horizontal-divider">
+               <div class="sub-title">
+                  <h3 class="questions">night<span class="playbtn"
+                     onclick="play('data/assets/audio/audio-unit-wise/Unit1/small.mp3')">
+                     <img src="data/assets/images/volumn.png" alt="Play">
+                     </span>
+                  </h3>
+               </div>
+               <div class="first-img second-roww wrong-answer">
+                  <span class="On-submit cross"></span><label><img src="data/assets/images/unit/unit2/sun.png" alt="sky"
+                     class="zooms zoom-effect">
+                  <!-- <input type="radio" id="mc" name="question2" value="bigimg2"> -->
+                  </label>
+               </div>
+               <div class="sec-img second-roww correct-answer">
+                  <span class="On-submit tick"></span><label><img src="data/assets/images/unit/unit2/star.jpg" alt="sky"
+                     class="zooms zoom-effect">
+                  <!-- <input type="radio" id="mc" name="question2" value="smallimg2"> -->
+                  </label>
+               </div>
+               <div class="third-img second-roww correct-answer">
+                  <span class="On-submit tick"></span><label><img src="data/assets/images/unit/unit2/moon.jpg" alt="sky"
+                     class="zooms zoom-effect">
+                  <!-- <input type="radio" id="mc" name="question2" value="smallimg2"> -->
+                  </label>
+               </div>
+            </div>
+            <div class="actionbtn reloadbtn">
+               <button id="button" type="button" value="Submit" onclick="check2();" class="disablehreflink"
+                  style="display: none;">
+               <img src="data/assets/images/ansbtn.png" alt="Answer"
+                  style="opacity: 1; transform: scale(1);">
+               </button>
+               <button type="reset" class="resetRadioInput" onclick="myFunction2()">
+               <img src="data/assets/images/reload.png" alt="Reload">
+               </button>
+            </div>
 
-                <!-- "Tick" exercise start -->
-               <!-- exercise end -->
-                <!-- "Tick" exercise end -->
 
+                     <div class="transparentbg" id="after_submit" style="display: none;">
+                        <audio id="myAudio">
+
+                           <source  type="audio/mpeg">
+                           
+                         </audio>
+                         <div class="result">
+                             <div class="goodjob" style="display: none;">
+                                 <a href="javascript:void(0);" class="popupclose disablehreflink"><img src="data/assets/images/wrong.png" alt="Close"></a>
+                                 <img src="data/assets/images/goodjob.jpg" class="img100">
+                             </div>
+                             <div class="tryagain">
+                                 <a href="javascript:void(0);" class="popupclose disablehreflink"><img src="data/assets/images/wrong.png" alt="Close"></a>
+                                 <img src="data/assets/images/tryagain.jpg" class="img100">
+                             </div>
+                         </div>
+                     </div>
+
+
+
+
+         </form>
+      </div>
+        <div class="homework">
+           <p class="homeworkimg" onclick="homeworkdetail();"><img title="Homework"
+              src="data/assets/images/homework.png" alt="Homework"></p>
+           <div class="homeworktext" style="display: none;">
+              <span>✖</span>
+              Ask your child to show you "big" and "Small" things around the house
+           </div>
+        </div>
+     </div>
+     <!-- "big-small" exercise 2 end -->
             </div> <!-- lesson end -->
 
             <div id="footerwithlesson"></div>

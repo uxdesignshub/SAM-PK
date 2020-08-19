@@ -1,16 +1,166 @@
-        <div class="dynamicpagediv insideframepadding">
+<script src="data/assets/js/new-custom.js"></script>
+        <div class="dynamicpagediv insideframepadding" id="unit1-lesson4">
             <div id="header"></div>
             
-            <div class="lesson">
-                <!-- "Read" exercise start -->
-               <!-- exercise end -->
-                <!-- "Read" exercise end -->
+            <div class="lesson tocinnercontainer hot-cold scrollbarorange" id="quiz-SelectMulti">
+              <!-- "big-small" exercise 1 start -->
+              <div class="exercise">
+                 <div class="topleftlogo clearfix" id="topleftlogo" onclick="play('data/assets/audio/read.mp3')">
+                            <div class="pointer inline">
+                                <img src="data/assets/images/readlogo.png" alt="Book" class="logoinside">
+                            </div>
+                            <img src="data/assets/images/readtext.png" alt="Read" class="textinside">
+          </div>
+                 <div class="hot-cold two-col clearfix">
+                    <div class="left-col">
+                       <div class="first-img"><img src="data/assets/images/Unit-images/unit-1/lesson-4/sun.png" class="zoom-effect"
+                          alt="big"
+                          onclick="play('data/assets/audio/audio-unit-wise/Unit1/hot.mp3')"></div>
+                       <div class="sec-img"><img src="data/assets/images/Unit-images/unit-1/lesson-4/kettel.png" class="zoom-effect"
+                          alt="small"
+                          onclick="play('data/assets/audio/audio-unit-wise/Unit1/hot.mp3')"></div>
+                          <div class="third-img"><img src="data/assets/images/Unit-images/unit-1/lesson-4/fire.png" class="zoom-effect"
+                          alt="small"
+                          onclick="play('data/assets/audio/audio-unit-wise/Unit1/hot.mp3')"></div>
 
-                <!-- "Tick" exercise start -->
-               <!-- exercise end -->
-                <!-- "Tick" exercise end -->
+                          <!-- <div class="outside-img">
+                              <img src="data/assets/images/Unit-images/unit-1/lesson-4/user1.png" class="zoom-effect"
+                          alt="user">
+                          </div> -->
+                    </div>
+                    <div class="right-col">
+                       <div class="col-block">
+                           <div class="first-img"><img src="data/assets/images/Unit-images/unit-1/lesson-4/icecream.png"
+                          alt="big" class="zoom-effect"
+                          onclick="play('data/assets/audio/audio-unit-wise/Unit1/cold.mp3')"></div> 
+                          <div class="sec-img"><img src="data/assets/images/Unit-images/unit-1/lesson-4/colddrink.png"
+                          alt="small" class="zoom-effect"
+                          onclick="play('data/assets/audio/audio-unit-wise/Unit1/cold.mp3')"></div>                      
+                       </div>
+                       <div class="col-block">
+                           <div class="third-img"><img src="data/assets/images/Unit-images/unit-1/lesson-4/penguin.png"
+                          alt="small" class="zoom-effect"
+                          onclick="play('data/assets/audio/audio-unit-wise/Unit1/cold.mp3')"></div>
+                          
+                       </div>
+                    </div>
+                 </div>
+              </div>
+              <!-- "big-small" exercise 1 end -->
+              <!-- "big-small" exercise 2 start -->
+              <div class="exercise" id="Quiz-hot">
+                 <div class="topleftlogo clearfix" id="topleftlogo" onclick="play('data/assets/audio/read.mp3')">
+                            <div class="pointer inline">
+                                <img src="data/assets/images/readlogo.png" alt="Book" class="logoinside">
+                            </div>
+                            <img src="data/assets/images/readtext.png" alt="Read" class="textinside">
+          </div>
+                 <div class="color-wrap"> 
 
-            </div> <!-- lesson end -->
+                    <div class="color-text" attr-id="red">
+                        <figure>
+                        <img src="data/assets/images/Unit-images/unit-1/lesson-4/red-pencil.png"
+                       alt="big">
+                    </figure>
+                    <span class="hot-text">hot</span>
+
+                        <div class="playbtn"
+                        onclick="play('data/assets/audio/audio-unit-wise/Unit1/hot.mp3')">
+                        <img src="data/assets/images/volumn.png" alt="Play">
+                        </div>
+
+                    </div>
+                    <!-- color-text -->
+                    <div class="color-text" attr-id="blue">
+                        <figure>
+                        <img src="data/assets/images/Unit-images/unit-1/lesson-4/blue-pencil.png"
+                       alt="big">
+                    </figure>
+                    <span class="cold-text">cold</span>
+                        <div class="playbtn"
+                        onclick="play('data/assets/audio/audio-unit-wise/Unit1/cold.mp3')">
+                        <img src="data/assets/images/volumn.png" alt="Play">
+                        </div>
+                    </div>
+                    <!-- color-text -->
+                 </div>
+                 <div class="hot-cold-sec two-rows clearfix">
+                    <form id="quiz" name="quiz">
+                       <div id="results"></div>
+                       <div class="first-row">
+                          <div class="first-img first-row-color" color-id="red">
+                             <span class="On-submit"  style="display: none;"></span><label>
+                             <img src="data/assets/images/Unit-images/unit-1/lesson-4/border-sun.png" alt="big"
+                                class="zooms zoom-effect">
+                             </label>
+                          </div>
+                          <div class="sec-img first-row-color" color-id="red">
+                             <span class="On-submit"  style="display: none;"></span><label><img
+                                src="data/assets/images/Unit-images/unit-1/lesson-4/border-kettel.png" alt="small"
+                                class="zooms zoom-effect">
+                             </label>
+                          </div>
+                          <div class="third-img first-row-color" color-id="blue">
+                             <span class="On-submit"  style="display: none;"></span><label><img
+                                src="data/assets/images/Unit-images/unit-1/lesson-4/border-ice.png" alt="small"
+                                class="zooms zoom-effect">
+                             </label>
+                          </div>
+                          <div class="four-img first-row-color" color-id="blue">
+                             <span class="On-submit"  style="display: none;"></span><label><img
+                                src="data/assets/images/Unit-images/unit-1/lesson-4/border-icecream.png" alt="small"
+                                class="zooms zoom-effect">
+
+                             </label>
+                          </div>
+                       </div>
+                       <div class="actionbtn reloadbtn">
+                          <button id="button" type="button" value="Submit" onclick="check1();" class="disablehreflink"
+                             style="display: none;">
+                          <img src="data/assets/images/ansbtn.png" alt="Answer"
+                             style="opacity: 1; transform: scale(1);">
+                          </button>
+                          <button type="reset" class="resetRadioInput" onclick="myFunction1()">
+                          <img src="data/assets/images/reload.png" alt="Reload">
+                          </button>
+                       </div>
+
+
+                                <div class="transparentbg" id="after_submit" style="display: none;">
+                                   <audio id="myAudio">
+          
+                                      <source  type="audio/mpeg">
+                                      
+                                    </audio>
+                                    <div class="result">
+                                        <div class="goodjob" style="display: none;">
+                                            <a href="javascript:void(0);" class="popupclose disablehreflink"><img src="data/assets/images/wrong.png" alt="Close"></a>
+                                            <img src="data/assets/images/goodjob.jpg" class="img100">
+                                        </div>
+                                        <div class="tryagain">
+                                            <a href="javascript:void(0);" class="popupclose disablehreflink"><img src="data/assets/images/wrong.png" alt="Close"></a>
+                                            <img src="data/assets/images/tryagain.jpg" class="img100">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                    </form>
+                 </div>
+                 <div class="homework">
+                    <p class="homeworkimg" onclick="homeworkdetail();"><img title="Homework"
+                       src="data/assets/images/homework.png" alt="Homework"></p>
+                    <div class="homeworktext" style="display: none;">
+                       <span>✖</span>
+                       Help your child freeze water to make ice cubes, and then melt them.
+                    </div>
+                 </div>
+              </div>
+              <!-- "big-small" exercise 2 end -->
+           </div>
+           <!-- lesson end -->
 
             <div id="footerwithlesson"></div>
         </div> <!-- dynamicpagediv end -->

@@ -1,25 +1,17 @@
+<script src="data/assets/js/new-custom.js"></script>
 <div class="dynamicpagediv insideframepadding" id="unit1-lesson2">
   <div id="header"></div>
 
-  <div class="lesson tocinnercontainer scrollbarorange">
+  <div class="lesson tocinnercontainer scrollbarorange" id="quiz-SelectOne">
     <!-- "heavy-light" exercise 1 start -->
     <div class="exercise">
-      <div class="activity-title" onclick="play('data/assets/audio/tick.mp3')">
-        <i class="activity-icon"
-          ><img
-            src="data/assets/images/Unit-images/unit-1/lesson-1/hnad5.png"
-            alt="big"
-        /></i>
-
-        <h2>
-          <span>P</span>
-          <span>o</span>
-          <span>i</span>
-          <span>n</span>
-          <span>t</span>
-        </h2>
-      </div>
-      <div class="upper-area cursor">
+      <div class="topleftlogo clearfix" id="topleftlogo" onclick="play('data/assets/audio/read.mp3')">
+                            <div class="pointer inline">
+                                <img src="data/assets/images/readlogo.png" alt="Book" class="logoinside">
+                            </div>
+                            <img src="data/assets/images/readtext.png" alt="Read" class="textinside">
+          </div>
+      <div class="upper-area">
         <div id="weight-scales"> 
           <img
             src="data/assets/images/Unit-images/unit-1/lesson-2/weight-scales.jpg"
@@ -29,28 +21,24 @@
         <div id="heavy-books">
           <img
             src="data/assets/images/Unit-images/unit-1/lesson-2/Heavy-books.png"
-            alt="Heavy-books"
-          />
+            alt="Heavy-books" class="zoom-effect" onclick="play('data/assets/audio/audio-unit-wise/Unit1/heavy.mp3')" />
         </div>
         <div id="light-book">
           <img
             src="data/assets/images/Unit-images/unit-1/lesson-2/light-book.png"
-            alt="light-book"
-          />
+            alt="light-book" class="zoom-effect" onclick="play('data/assets/audio/audio-unit-wise/Unit1/light.mp3')" />
         </div>
       </div>
       <div class="bottom-area horizontal-divider">
-        <div id="heavy-car" class="cursor">
+        <div id="heavy-car" >
           <img
             src="data/assets/images/Unit-images/unit-1/lesson-2/Heavy-car.jpg"
-            alt="Heavy-car"
-          />
+            alt="Heavy-car" class="zoom-effect" onclick="play('data/assets/audio/audio-unit-wise/Unit1/heavy.mp3')" />
         </div>
-        <div id="light-trycycle" class="cursor">
+        <div id="light-trycycle" >
           <img
             src="data/assets/images/Unit-images/unit-1/lesson-2/light-trycycle.png"
-            alt="light-trycycle"
-          />
+            alt="light-trycycle" class="zoom-effect" onclick="play('data/assets/audio/audio-unit-wise/Unit1/light.mp3')" />
         </div>
       </div>
     </div>
@@ -59,18 +47,12 @@
     
       <!-- "heavy-light" exercise 2 start -->
       <div class="exercise" id="Quiz-HeavyLight">
-        <div class="activity-title" onclick="play('data/assets/audio/color.mp3')">
-           <i class="activity-icon"><img src="data/assets/images/Unit-images/unit-1/lesson-2/hnad9.png"
-              alt="big"></i>
-           <h2>
-              <span>C</span>
-              <span>i</span>
-              <span>r</span>
-              <span>c</span>
-              <span>l</span>
-              <span>e</span>
-           </h2>
-        </div>
+        <div class="topleftlogo clearfix" id="topleftlogo" onclick="play('data/assets/audio/read.mp3')">
+                            <div class="pointer inline">
+                                <img src="data/assets/images/readlogo.png" alt="Book" class="logoinside">
+                            </div>
+                            <img src="data/assets/images/readtext.png" alt="Read" class="textinside">
+          </div>
         <div class="big-small-sec two-rows clearfix">
            <form id="quiz" name="quiz">
               <div id="results"></div>
@@ -80,18 +62,21 @@
                       src="data/assets/images/Unit-images/unit-1/lesson-2/shutterstock_371687692.jpg"
                       alt="shutterstock_371687692"
                     />
-                    <h3>light</h3>
+                    <h3>light 
                     <span class="playbtn" onclick="play('data/assets/audio/audio-unit-wise/Unit1/light.mp3')">
                       <img src="data/assets/images/volumn.png" alt="Play">
                       </span>
+                    
+                    </h3>
+
                   </div>
-                <div id="house" class="wrong-answer hoverzoom cursor"> 
+                <div id="house" class="wrong-answer hoverzoom first-roww"> 
                     <img
                       src="data/assets/images/Unit-images/unit-1/lesson-2/shutterstock_157613708.jpg"
                       alt="shutterstock_371687692"
                     /><span class="On-submit cross"  style="display: none;"></span>
                   </div>
-                <div id="houseWithHand" class="correct-answer hoverzoom cursor"> 
+                <div id="houseWithHand" class="correct-answer hoverzoom first-roww"> 
                     <img
                       src="data/assets/images/Unit-images/unit-1/lesson-2/shutterstock_668999506_copy.png"
                       alt="shutterstock_668999506_copy"
@@ -104,19 +89,21 @@
                       src="data/assets/images/Unit-images/unit-1/lesson-2/shutterstock_404960242.png"
                       alt="Stone"
                     />
-                    <h3>heavy</h3>
+                    <h3>heavy
                     <span class="playbtn" onclick="play('data/assets/audio/audio-unit-wise/Unit1/heavy.mp3')">
                       <img src="data/assets/images/volumn.png" alt="Play">
                       </span>
+                    </h3>
+
                   </div>
-                <div id="comb" class="wrong-answer hoverzoom cursor"> 
+                <div id="comb" class="wrong-answer hoverzoom second-roww"> 
                     <img
                       src="data/assets/images/Unit-images/unit-1/lesson-2/comb.jpg"
                       alt="comb"
                     />
                     <span class="On-submit cross" style="display: none;"></span>
                   </div>
-                <div id="machine" class="correct-answer hoverzoom cursor"> 
+                <div id="machine" class="correct-answer hoverzoom second-roww"> 
                     <img
                       src="data/assets/images/Unit-images/unit-1/lesson-2/shutterstock_654951829_copy.jpg"
                       alt="shutterstock_654951829_copy"
@@ -136,6 +123,11 @@
 
 
                        <div class="transparentbg" id="after_submit" style="display: none;">
+                           <audio id="myAudio">
+  
+                              <source  type="audio/mpeg">
+                              
+                            </audio>
                            <div class="result">
                                <div class="goodjob" style="display: none;">
                                    <a href="javascript:void(0);" class="popupclose disablehreflink"><img src="data/assets/images/wrong.png" alt="Close"></a>
@@ -158,7 +150,7 @@
               src="data/assets/images/homework.png" alt="Homework"></p>
            <div class="homeworktext" style="display: none;">
               <span>✖</span>
-              Ask your child to show you "big" and "Small" things around the house
+              Help your child compare the weight of objects using their hands.
            </div>
         </div>
      </div>

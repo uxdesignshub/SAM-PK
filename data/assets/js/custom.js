@@ -14,8 +14,7 @@ function showPage() {
 
 $(function () {
     lodaderOnLoad();
-    // $("#loadpagecontent").load("data/splash-screen.html", function(){
-    $("#loadpagecontent").load("data/unit1/lesson-2.html", function(){
+    $("#loadpagecontent").load("data/splash-screen.html", function(){
         // Full Screen window function
         /*$(document).on('keyup',function(evt) {
             if (evt.keyCode == 27 || $('.wrapper').hasClass('fullscreen')) {
@@ -24,12 +23,6 @@ $(function () {
             }
         });*/        
     });
-
-    //will remove
-    setTimeout(() => {
-        $("#header").load("data/include/header.html");
-        $("#footerwithlesson").load("data/unit1/footerwithlesson.html");
-    }, 1000);
 });
 
 // Disable Right Click Menu

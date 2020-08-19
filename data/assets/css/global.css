@@ -1,0 +1,93 @@
+/*flex-global*/
+.d-flex {
+	display: -ms-flexbox;
+	display: flex
+}
+.justify-content-start {
+	-ms-flex-pack: start;
+	justify-content: flex-start
+}
+.justify-content-end {
+	-ms-flex-pack: end;
+	justify-content: flex-end
+}
+.justify-content-center {
+	-ms-flex-pack: center;
+	justify-content: center
+}
+.justify-content-between {
+	-ms-flex-pack: justify;
+	justify-content: space-between
+}
+.justify-content-around {
+	-ms-flex-pack: distribute;
+	justify-content: space-around
+}
+.align-items-start {
+	-ms-flex-align: start;
+	align-items: flex-start
+}
+.align-items-end {
+	-ms-flex-align: end;
+	align-items: flex-end
+}
+.align-items-center {
+	-ms-flex-align: center;
+	align-items: center
+}
+.flex-wrap {
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap
+}
+/*header-left logo*/
+.topleftlogo {
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    z-index: 12;
+}
+.pointer {
+    cursor: pointer;
+}
+.topleftlogo .logoinside {
+    width: 94px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    transform-origin: left;
+}
+.topleftlogo .textinside {
+    width: 130px;
+    vertical-align: top;
+    padding-top: 26px;
+    position: relative;
+    margin-left: 6px;
+    transition: all 0.4s ease-in-out;
+    transform-origin: left;
+}
+@media (max-width: 991px){
+	.topleftlogo .logoinside {
+	    width: 55px;
+	    top: -16px;
+	    left: -16px;
+	}
+	.topleftlogo .textinside {
+	    width: 60px;
+	    padding-top: 5px;
+	    /* left: -50px; */
+	}
+}
+/*horizontal divider*/
+.horizontal-divider:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -20px;
+    top: -70px;
+    width: calc(100% + 40px);
+    height: 40px;
+    background: url(../images/divider.png) no-repeat;
+    background-size: 100% 100%;
+}
+/*js custom global classes*/

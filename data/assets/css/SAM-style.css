@@ -1,41 +1,11 @@
-.lesson{background: white; padding: 0 20px 20px;}
+.lesson{background: white; padding: 60px 20px 20px;}
 
 .lesson.scrollbarorange{margin-left: 0;}
 
-.lesson .exercise{padding-top: 50px; overflow: hidden; min-height: 100%; height: auto;} 
+.lesson .exercise{
+    /* padding-top: 50px; min-height: 100%; height: auto; */
+    } 
 
-.activity-title{ display: flex; position: fixed;
-    top: 8px;
-    left: 8px;
-    z-index: 12;
-    transition: all 0.3s ease-in-out;
-    transform-origin: left;
-    cursor: pointer;}
-
-.activity-title:hover{transform: scale(1.1);}
-
-.activity-title .activity-icon{box-shadow: 0px 5px 12px 3px rgba(0, 0, 0, 0.3) inset; display: flex; justify-content: center; align-items: center; width: 94px; height: 94px; border-radius: 50%; background: #d1232a; text-align: center;  margin-right: 10px;}
-.activity-title .activity-icon img{max-width: 80%; max-height: 80%;}
-.activity-title h2{ font-size: 4rem;  display: flex; align-items: center; margin: 0; text-shadow: -2px -1px 1px rgba(255, 255, 255, 1); }
-.activity-title h2 span{position: relative;  color: #ffc20e;}
-.activity-title h2 span:nth-child(even) {
-    top: 8px;
-}
-.activity-title h2 span:nth-child(2) {
-    color: #ec008c;
-}
-.activity-title h2 span:nth-child(3) {
-    color: #4793cf;
-}
-.activity-title h2 span:nth-child(4) {
-    color: #87bd40;
-}
-.activity-title span:nth-child(5) {
-    color: #725ba7;
-}
-.activity-title h2 span:nth-child(6) {
-    color: #15c1f3;
-}
 
  img{max-width: 100%;}
 
@@ -157,10 +127,10 @@ img.zoom-effect{transform-origin: center;}
 
 #quiz input[type="radio"] { margin-bottom:0; opacity: 0;}
 
-.first-row .first-img.correct-answer.selected img {filter: contrast(1000%) sepia(100%) saturate(1000%) hue-rotate(138deg);}
-.first-row .sec-img.wrong-answer.selected img{filter: contrast(1000%) sepia(100%) saturate(1000%) hue-rotate(269deg);}
-.sec-row .first-img.wrong-answer.selected img{filter: contrast(1000%) sepia(100%) saturate(1000%) hue-rotate(86deg);}
-.sec-row .sec-img.correct-answer.selected img{filter: contrast(1000%) sepia(100%) saturate(1000%) hue-rotate(31deg);}
+.U1l1 .first-row .first-img.correct-answer.selected img {filter: contrast(1000%) sepia(100%) saturate(1000%) hue-rotate(138deg);}
+.U1l1 .first-row .sec-img.wrong-answer.selected img{filter: contrast(1000%) sepia(100%) saturate(1000%) hue-rotate(269deg);}
+.U1l1 .sec-row .first-img.wrong-answer.selected img{filter: contrast(1000%) sepia(100%) saturate(1000%) hue-rotate(86deg);}
+.U1l1 .sec-row .sec-img.correct-answer.selected img{filter: contrast(1000%) sepia(100%) saturate(1000%) hue-rotate(31deg);}
 
 .horizontal-divider{position: relative;}
 .horizontal-divider:before{
@@ -174,17 +144,11 @@ img.zoom-effect{transform-origin: center;}
     background: url(../images/divider.png) no-repeat; background-size: 100% 100%; }
 
 
-    
+   
 /*for Mobile*/
 @media only screen and (max-width: 767px) {
 
-    .activity-title{display:block;}
-
-    .activity-title .activity-icon{    width: 60px; height: 60px; float: left;}
-    .activity-title h2{float:left;  font-size: 2rem;}
-    .activity-title h2 span:nth-child(even) {
-        top: 4px;
-    }
+    
 
         .big-small {flex-direction: column; padding-bottom: 30px; }
         .big-small .left-col,.big-small .right-col{ width: 100%; margin: 20px 0; padding: 10%;}
@@ -204,7 +168,7 @@ img.zoom-effect{transform-origin: center;}
 
 
     .two-rows .sub-title .playbtn img {
-    width: 45px;}
+        width: 35px;}
 
         .two-rows .first-row, .two-rows .sec-row{display: block;}
         .two-rows .sub-title{width: 100%; overflow: hidden;}
@@ -217,7 +181,10 @@ img.zoom-effect{transform-origin: center;}
 
     .wrong-answer::before, .correct-answer::before{background-size: 50%;
         background-position: center;}
-        .lesson .exercise{padding-top: 0;}
+        .lesson .exercise{padding-top: 0; margin-left: -20px;
+            margin-right: -20px;
+            padding-left: 20px;
+            padding-right: 20px;}
         .actionbtn.reloadbtn{bottom: 42px;}
  
 }
@@ -225,7 +192,7 @@ img.zoom-effect{transform-origin: center;}
 @media (max-width: 944px){
 
     .two-rows .sub-title .playbtn img {
-        width: 55px;
+        width: 35px;
         padding: 6px;
         vertical-align: middle;
     }
@@ -239,4 +206,285 @@ img.zoom-effect{transform-origin: center;}
 /*for Bigger screens*/
 @media only screen and (min-width: 1820px) {
   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Unit 1 Lesson 2 Start From Here*/
+
+#unit1-lesson2 img {
+    display: block;
+}
+#unit1-lesson2 .topleftlogo img{
+	display:inline-block;
+}
+#unit1-lesson2 .upper-area {
+    position: relative;
+    min-width: 200px;
+    width: 47%;
+    margin: 0 auto 80px;
+ }
+
+#heavy-books {
+    position: absolute;
+    right: -18%;
+    top: -11%;
+    width: 64%;
+}
+
+#light-book {
+    position: absolute;
+    left: -2%;
+    top: -10%;
+    width: 35%;
+}
+
+#unit1-lesson2 .bottom-area {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#heavy-car {
+    width: 65%;
+}
+
+#heavy-car img{ width: 80%; min-width: 220px;}
+#light-trycycle img{ width: 70%; min-width: 150px;}
+
+#light-trycycle {
+    width: 35%;
+}
+
+#unit1-lesson2 .upper-area2{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 53px;
+}
+#unit1-lesson2 .upper-area2 #baloon h3{
+    position: absolute;
+    left: 0;
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+    top: 52%;
+    transform: translateY(-210%);
+    color: #ec008c;
+    text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
+
+    white-space: nowrap;
+    padding-left: 18%;
+}
+#unit1-lesson2 .upper-area2 #baloon{
+    width: 16%;
+    min-width: 16%;
+    align-self: flex-start;
+    position: relative;
+    z-index: 5;
+}
+
+#unit1-lesson2  #stone  .playbtn, #unit1-lesson2  #baloon  .playbtn{    top: auto; position: static;
+    display: inline-block;}
+
+#unit1-lesson2 .upper-area2 #house.selected:after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    height: 123.5%;
+    content: "";
+    border: 6px solid #2E2E2E;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    /* z-index: 999999999; */
+}
+#unit1-lesson2 .upper-area2 #house{
+    width: 50%;
+    min-width: 50%;
+    margin-bottom: 23px;
+    position: relative;
+}
+#unit1-lesson2 .upper-area2 #houseWithHand.selected:after {
+    border: 6px solid #2E2E2E;
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 78%;
+    HEIGHT: 80.3%;
+    border-radius: 50%;
+}
+#unit1-lesson2 .upper-area2 #houseWithHand{
+    min-width: 25%;
+    width: 25%;
+    position: relative;
+}
+#unit1-lesson2 .bottom-area2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#unit1-lesson2 .bottom-area2 #stone{
+    width: 33%;
+    min-width: 33%;
+    position: relative;
+    align-self: flex-end;
+    z-index: 5;
+}
+#unit1-lesson2 .bottom-area2 #stone h3{
+    position: absolute;
+    left: 0;
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ec008c;
+    text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
+
+    white-space: nowrap;
+    padding-left: 20%;
+}
+#unit1-lesson2 .bottom-area2 #comb.selected:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    height: 135%;
+    border: 6px solid #2E2E2E;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+#unit1-lesson2 .bottom-area2 #comb{
+    width: 18%;
+    min-width: 18%;
+    margin-bottom: 23px;
+    position: relative;
+}
+#unit1-lesson2 .bottom-area2 #machine.selected:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 92%;
+    height: 107.16%;
+    border: 6px solid #2E2E2E;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+#unit1-lesson2 .bottom-area2 #machine{
+    min-width: 35%;
+    width: 35%;
+    position: relative;
+}
+.right-speaker .playbtn{
+    left: auto;
+    right: -40px;
+    position: absolute;
+}
+#stone.right-speaker .playbtn{
+    right: 0;
+}
+/*Unit 1 Lesson 2 End From Here*/
+
+
+@media (max-width:944px) {
+
+    /*Unit 1 Lesson 2 Start From Here*/
+    #unit1-lesson2 .upper-area{
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    /*Unit 1 Lesson 2 End From Here*/
+}
+
+@media (max-width:700px) {
+        
+    /*Unit 1 Lesson 2 Start From Here*/
+    #unit1-lesson2 .upper-area{
+        
+    }
+        #unit1-lesson2 .bottom-area{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0;
+    }
+    #unit1-lesson2 .upper-area2{
+        padding-left: 90px;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+    #unit1-lesson2 .upper-area2 #baloon h3{
+        font-size: 1.5rem;
+        transform: translateY(-216%);
+    }
+    #unit1-lesson2 .upper-area2 #baloon{
+        width: 80px;
+        min-width: 80px;
+        position: absolute;
+        left: 0;
+        top: 30px;
+    }
+    #unit1-lesson2 .upper-area2 #house {
+        width: 90%;
+        min-width: 90%;
+    }
+    #unit1-lesson2 .upper-area2 #houseWithHand {
+        min-width: 65%;
+        width: 65%;
+    }
+    #unit1-lesson2 .bottom-area2 #stone{
+        position: absolute;
+        left: 0;
+        top: 40px;
+        width: 110px;
+        min-width: 110px;
+    }
+    #unit1-lesson2 .bottom-area2{
+        padding-left: 120px;
+        flex-direction: column;
+    align-items: center;
+    }
+    #unit1-lesson2 .bottom-area2 #comb{
+        width: 48%;
+        min-width: 48%;
+    }
+    #unit1-lesson2 .bottom-area2 #machine{
+        width: 100%;
+        min-width: 100%;
+    }
+    #unit1-lesson2 .bottom-area2 #stone h3{
+        font-size: 1.5rem;
+    }
+    .right-speaker .playbtn{
+        right: -10px;
+    }
+
+    #heavy-car{margin-bottom: 20px;}
+    #light-trycycle img{margin: 0 auto;}
+
+.lesson{padding-top: 0; }
+    /*Unit 1 Lesson 2 End From Here*/
 }

@@ -1669,6 +1669,194 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
 }
 
+/*Unit 1 Lesson 2 Start From Here*/
+.cursor{
+    cursor: pointer;
+}
+#unit1-lesson2 img {
+    display: block;
+}
+
+#unit1-lesson2 .upper-area {
+    position: relative;
+    width: 350px;
+    margin: 0 auto 80px;
+    max-width: 80%;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1);
+}
+#unit1-lesson2 .upper-area:hover{
+    transform: scale(1.1);
+}
+
+#heavy-books {
+    position: absolute;
+    right: -18%;
+    top: -11%;
+    width: 64%;
+}
+
+#light-book {
+    position: absolute;
+    left: -2%;
+    top: -10%;
+    width: 35%;
+}
+
+#unit1-lesson2 .bottom-area {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-right: 50px;
+}
+
+#heavy-car {
+    width: 92%;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1);
+}
+.hoverzoom{
+    transition: all 0.2s ease-in-out;
+    transform: scale(1);
+}
+#heavy-car:hover,
+#light-trycycle:hover,
+.hoverzoom:hover{
+    transform: scale(1.1);
+}
+
+#light-trycycle {
+    width: 55%;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1);
+}
+
+#unit1-lesson2 .upper-area2{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 53px;
+}
+#unit1-lesson2 .upper-area2 #baloon h3{
+    position: absolute;
+    left: 0;
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-210%);
+    color: #ec008c;
+    text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
+}
+#unit1-lesson2 .upper-area2 #baloon{
+    width: 16%;
+    min-width: 16%;
+    align-self: flex-start;
+    position: relative;
+    z-index: 9;
+}
+#unit1-lesson2 .upper-area2 #house.selected:after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    height: 123.5%;
+    content: "";
+    border: 1px solid red;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    /* z-index: 999999999; */
+}
+#unit1-lesson2 .upper-area2 #house{
+    width: 50%;
+    min-width: 50%;
+    margin-bottom: 23px;
+    position: relative;
+}
+#unit1-lesson2 .upper-area2 #houseWithHand.selected:after {
+    border: 1px solid red;
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 78%;
+    HEIGHT: 80.3%;
+    border-radius: 50%;
+}
+#unit1-lesson2 .upper-area2 #houseWithHand{
+    min-width: 25%;
+    width: 25%;
+    position: relative;
+}
+#unit1-lesson2 .bottom-area2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#unit1-lesson2 .bottom-area2 #stone{
+    width: 33%;
+    min-width: 33%;
+    position: relative;
+    align-self: flex-end;
+    z-index: 9;
+}
+#unit1-lesson2 .bottom-area2 #stone h3{
+    position: absolute;
+    left: 0;
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ec008c;
+    text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
+}
+#unit1-lesson2 .bottom-area2 #comb.selected:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    height: 135%;
+    border: 1px solid red;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+#unit1-lesson2 .bottom-area2 #comb{
+    width: 18%;
+    min-width: 18%;
+    margin-bottom: 23px;
+    position: relative;
+}
+#unit1-lesson2 .bottom-area2 #machine.selected:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 92%;
+    height: 107.16%;
+    border: 1px solid red;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+#unit1-lesson2 .bottom-area2 #machine{
+    min-width: 35%;
+    width: 35%;
+    position: relative;
+}
+.right-speaker .playbtn{
+    left: auto;
+    right: -40px;
+    position: absolute;
+}
+#stone.right-speaker .playbtn{
+    right: 0;
+}
+/*Unit 1 Lesson 2 End From Here*/
 
 @media (min-width:945px) {
     .breathe h5 {
@@ -2080,6 +2268,11 @@ h1, h2, h3, h4, h5, h6 {
     .tocunitnamewrap a {
         margin-bottom: 15px;
     }
+    /*Unit 1 Lesson 2 Start From Here*/
+    #unit1-lesson2 .upper-area{
+        margin-top: 50px;
+    }
+    /*Unit 1 Lesson 2 End From Here*/
 }
 
 @media (max-width:700px) {
@@ -2128,6 +2321,69 @@ h1, h2, h3, h4, h5, h6 {
         height: auto!important;
         max-width: 90%;
     }
+    
+    /*Unit 1 Lesson 2 Start From Here*/
+    #unit1-lesson2 .upper-area{
+        margin-bottom: 140px;
+    }
+        #unit1-lesson2 .bottom-area{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0;
+    }
+    #unit1-lesson2 .upper-area2{
+        padding-left: 90px;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+    #unit1-lesson2 .upper-area2 #baloon h3{
+        font-size: 1.5rem;
+    }
+    #unit1-lesson2 .upper-area2 #baloon{
+        width: 80px;
+        min-width: 80px;
+        position: absolute;
+        left: 0;
+        top: 30px;
+    }
+    #unit1-lesson2 .upper-area2 #house {
+        width: 90%;
+        min-width: 90%;
+    }
+    #unit1-lesson2 .upper-area2 #houseWithHand {
+        min-width: 65%;
+        width: 65%;
+    }
+    #unit1-lesson2 .bottom-area2 #stone{
+        position: absolute;
+        left: 0;
+        top: 40px;
+        width: 110px;
+        min-width: 110px;
+    }
+    #unit1-lesson2 .bottom-area2{
+        padding-left: 120px;
+        flex-direction: column;
+    align-items: center;
+    }
+    #unit1-lesson2 .bottom-area2 #comb{
+        width: 48%;
+        min-width: 48%;
+    }
+    #unit1-lesson2 .bottom-area2 #machine{
+        width: 100%;
+        min-width: 100%;
+    }
+    #unit1-lesson2 .bottom-area2 #stone h3{
+        font-size: 1.5rem;
+    }
+    .right-speaker .playbtn{
+        right: -10px;
+    }
+    /*Unit 1 Lesson 2 End From Here*/
 }
 
 @media screen and (min-width:280px) and (max-width:944px) and (orientation:portrait) {

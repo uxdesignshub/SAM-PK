@@ -1,17 +1,135 @@
-        <div class="dynamicpagediv insideframepadding">
-            <div id="header"></div>
-            
-            <div class="lesson">
-                <!-- "Read" exercise start -->
-               <!-- exercise end -->
-                <!-- "Read" exercise end -->
+<div class="dynamicpagediv insideframepadding">
+	<div id="header"></div>
 
-                <!-- "Tick" exercise start -->
-               <!-- exercise end -->
-                <!-- "Tick" exercise end -->
+	<div class="lesson tocinnercontainer scrollbarorange sky-wrapper hotcold-wrapper">
+		<!-- "big-small" exercise 1 start -->
+		<div class="exercise">
+			<div class="topleftlogo clearfix" id="topleftlogo" onclick="play('data/assets/audio/read.mp3')">
+                            <div class="pointer inline">
+                                <img src="data/assets/images/readlogo.png" alt="Book" class="logoinside">
+                            </div>
+                            <img src="data/assets/images/readtext.png" alt="Read" class="textinside">
+          </div>
+			<div class="big-small two-col clearfix">
+				
+					<div class="left-col">
+						<div class="first-img"><img src="data/assets/images/unit/unit2/girls-winter.png"
+							alt="winter" class="zoom-effect" onclick="play('data/assets/audio/audio-unit-wise/Unit1/big.mp3')"
+							>
+						</div>
+						<div class="sec-img"><img src="data/assets/images/unit/unit2/cap-boy.png"
+							alt="winter" class="zoom-effect" onclick="play('data/assets/audio/audio-unit-wise/Unit1/big.mp3')"
+							>
+						</div>
+					</div>
+				
+				
+					<div class="right-col">
+						<div class="first-img"><img src="data/assets/images/unit/unit2/girls-summer.png"
+							alt="hot" class="zoom-effect" onclick="play('data/assets/audio/audio-unit-wise/Unit1/big.mp3')"
+							>
+						</div>
+						<div class="sec-img"><img src="data/assets/images/unit/unit2/paint-yellow.png"
+							alt="hot" class="zoom-effect" onclick="play('data/assets/audio/audio-unit-wise/Unit1/big.mp3')"
+							>
+						</div>
+					</div>
+				
+			</div>
+		</div>
+		<!-- "big-small" exercise 1 end -->
+		<!-- "big-small" exercise 2 start -->
+		<div class="exercise">
+			<div class="topleftlogo clearfix" id="topleftlogo" onclick="play('data/assets/audio/read.mp3')">
+                            <div class="pointer inline">
+                                <img src="data/assets/images/readlogo.png" alt="Book" class="logoinside">
+                            </div>
+                            <img src="data/assets/images/readtext.png" alt="Read" class="textinside">
+          </div>
+			<div class="big-small-sec two-rows clearfix">
+				<form id="quiz" name="quiz">
+					<div id="results"></div>
+					<div class="first-row">						
+						<div class="first-img first-roww">
+							<span class="On-submit tick"></span><label> 
+							<img src="data/assets/images/unit/unit2/SUN.png"
+							alt="winter")
+							>
+							<input type="radio" id="mc" name="question1" value="bigimg1">
+							</label>
+							<h2><span>hot</span><span class="playbtn zoom-effect"
+							onclick="play('data/assets/audio/audio-unit-wise/Unit1/small.mp3')"> <img src="data/assets/images/volumn.png" alt="Play"> </span></h2>
+						</div>
+						<div class="sec-img first-roww">
+							<span class="On-submit cross"></span><label>
+								<img src="data/assets/images/unit/unit2/summer.png"
+							alt="winter" class="zoom-effect"
+							>
+							<input type="radio" id="mc" name="question1" value="smallimg1">
+							</label>
+						</div>						
+					</div>
+					<div class="sec-row">						
+						<div class="first-img second-roww ">
+							<span class="On-submit cross"></span><label><img src="data/assets/images/unit/unit2/COLD.png" alt="winter"
+								class="zooms ">
+								<input type="radio" id="mc" name="question2" value="bigimg2">
+							</label>
+							<h2><span>cold</span><span class="playbtn zoom-effect"
+							onclick="play('data/assets/audio/audio-unit-wise/Unit1/small.mp3')"> <img src="data/assets/images/volumn.png" alt="Play"> </span></h2>
+						</div>
+						<div class="sec-img second-roww">
+							<span class="On-submit tick"></span><label><img src="data/assets/images/unit/unit2/winter.png" alt="winter"
+								class="zooms zoom-effect">
+								<input type="radio" id="mc" name="question2" value="smallimg2">
+							</label>
+						</div>
+					</div>
+					<div class="actionbtn reloadbtn">
+						<button id="button" type="button" value="Submit" onclick="check();" class="disablehreflink"
+						style="display: none;">
+							<img src="data/assets/images/ansbtn.png" alt="Answer"
+							style="opacity: 1; transform: scale(1);">
+						</button>
+						<button type="reset" class="resetRadioInput" onclick="myFunction()">
+							<img src="data/assets/images/reload.png" alt="Reload">
+						</button>
+					</div>
 
-            </div> <!-- lesson end -->
+					<div class="transparentbg" id="after_submit" style="display: none;">
+						<audio id="myAudio">
 
-            <div id="footerwithlesson"></div>
-        </div> <!-- dynamicpagediv end -->
-        
+							<source  type="audio/mpeg">
+
+						</audio>
+						<div class="result">
+							<div class="goodjob" style="display: none;">
+								<a href="javascript:void(0);" class="popupclose disablehreflink"><img src="data/assets/images/wrong.png" alt="Close"></a>
+								<img src="data/assets/images/goodjob.jpg" class="img100">
+							</div>
+							<div class="tryagain">
+								<a href="javascript:void(0);" class="popupclose disablehreflink"><img src="data/assets/images/wrong.png" alt="Close"></a>
+								<img src="data/assets/images/tryagain.jpg" class="img100">
+							</div>
+						</div>
+					</div>
+
+				</form>
+			</div>
+			<div class="homework">
+				<p class="homeworkimg" onclick="homeworkdetail();"><img title="Homework"
+					src="data/assets/images/homework.png" alt="Homework">
+				</p>
+				<div class="homeworktext" style="display: none;">
+					<span>✖</span>
+					Ask your child to show you "big" and "Small" things around the house
+				</div>
+			</div>
+		</div>
+		<!-- "big-small" exercise 2 end -->
+	</div>
+	<!-- lesson end -->
+
+	<div id="footerwithlesson"></div>
+</div>
+<!-- dynamicpagediv end -->
